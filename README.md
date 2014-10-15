@@ -10,4 +10,4 @@ usage
 example
 ============
 $ ./poodle.sh www.google.de:443
-vulnerable
+
