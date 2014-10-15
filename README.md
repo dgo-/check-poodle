@@ -7,5 +7,7 @@ usage
 ============
 ./poodle.sh yourServer.foo:Port
 
-example:
-./poodle.sh www.google.de:443
+example
+============
+$ ./poodle.sh www.google.de:443
+vulnerable
