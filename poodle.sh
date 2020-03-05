@@ -1,7 +1,13 @@
 #!/bin/bash
 #set -x
 
-host=$1
+input=$1
+
+if [[ $input =~ : ]]; then
+  host=$input
+else
+  host=$input:443
+fi
 
 check="`echo 'x' | openssl s_client -connect ${host} -quiet -ssl3 2> /dev/null`"
 if [ -z "${check}" ]; then
